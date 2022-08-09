@@ -1,20 +1,100 @@
 <!DOCTYPE html>
-
-<html lang="ja">
+<html>
 <head>
     <meta charset="utf-8">
-    <title>a-ishii.net</title>
-    <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property='og:type' content='website'>
+    <title>石井彰のホームページ</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="css/ress.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" media="all" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" href="img/favicon.ico"/>
 </head>
+
 <body>
-<div>
-    <div class="icon">
-        <img src="img/石井.png" alt="lambda">
-    </div>
-    <div class="msg">
-        Hello, my name is akira ishii
-    </div>
+<div class="wrapper">
+
+    <!-- header -->
+    <header class="header ">
+        <div class="container">
+            <h1 class="header-logo">
+                <a href=".">石井彰</a>
+            </h1>
+            <nav class="gnav">
+                <ul class="gnav-list">
+                    <li class="gnav-item"><a href="#skill">SKILL</a></li>
+                    <li class="gnav-item"><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+        <!-- mv -->
+        <div class="mv">
+            <div class="mv-container">
+                <p class="mv-title">石井彰のホームページ</p>
+            </div>
+        </div>
+        <!-- /mv -->
+
+        <!-- skill -->
+        <section class="skill section" id="skill">
+            <div class="container">
+                <h2 class="title">SKILL</h2>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <p class="skill-img"><img src="img/gopher.png" alt=""></p>
+                        <div class="skill-body">
+                            <h3 class="skill-name">Go言語</h3>
+                            <p class="skill-text">
+                                rps600程度のサイトのGo言語を用いたAPIの実装、設計を担当。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <p class="skill-img"><img src="img/laravel.jpeg" alt=""></p>
+                        <div class="skill-body">
+                            <h3 class="skill-name">PHP,Laravel</h3>
+                            <p class="skill-text">
+                                Laravelを用いたネットスーパーの管理システム構築。テックリードとしてDB設計からAPI設計、実装まで担当。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /skill -->
+
+        <!-- contact -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="title">CONTACT</h2>
+                <p class="lead">
+                    お問い合わせは、<br class="sp-only">メールにてお願いいたします。
+                </p>
+                <div class="contact-list">
+                    <span class="contact-item">ishii.system.tech@gmail.com</span>
+                </div>
+            </div>
+        </section>
+        <!-- /contact -->
+        <div class="page-top" id="js-page-top">
+            <span class="material-icons-outlined">expand_less</span>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="copyright">&copy;石井システム</div>
+    </footer>
+    <!-- /footer -->
+
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type='text/javascript' src="js/script.js"></script>
 </body>
 </html>
