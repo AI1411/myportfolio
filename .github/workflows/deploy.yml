@@ -24,7 +24,6 @@ jobs:
         env:
           aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_REGION }}
       - name: Copy Files to s3
         run: |
           aws s3 cp . s3://${{ secrets.BUCKET_NAME }} --recursive
