@@ -1,7 +1,7 @@
-```shell
-特定のファイルのみアップロード
-% aws s3 cp index.html s3://${bucketname}
+#### 石井彰のポートフォリオリポジトリ
 
-全てのファイルをアップロード
-% aws s3 cp . s3://akiraishii.work --recursive
-```
+#### cloudfront、S3、ACM、Route53を使用。
+
+#### githubActionsで自動デプロイ
+
+[サイト](https://a-ishii.net)
